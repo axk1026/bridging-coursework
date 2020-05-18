@@ -1,0 +1,8 @@
+*.pyc
+*~
+/.vacode
+__pycahce__
+myvenv
+db.splite3
+/static
+.DS_Store
