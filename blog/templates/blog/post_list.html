@@ -6,32 +6,12 @@
         <div>
             <h1><a href="/">Aftaab's blog</a></h1>
         </div>
-
+        {% for post in posts %}
         <div>
-            <h2><a href="">My first post</a></h2>
-            <h3><a href="">What I enjoyed studying this year?</a></h3>
-            <p>The things i enjoyed studying this year was learning
-              the new programming languages like C, Haskell and Python.
-              Furthermore, I enjoyed studying software engineering,
-              learning about how the concept of applications are thought up
-              and planned by creating use case diagrams, class diagrams, etc.</p>
-        </div>
-
-        <div>
-            <h2><a href="">My second post</a></h2>
-            <h3><a href="">What I am looking forward to studying next year?</a></h3>
-            <p>As I am an industrial year student next academic year 
-              I will be working for a company for that year.
-              I am looking forward to working with them as they are
-              a defence company called Qinetiq and i am working in their
-              software engineering department. I am looking forward to learning
-              the different ways that the company produces their use case diagrams
-              and how they layout their functional and non functional requirements
-              on a professional level. Furthermore, i am looking forward to see
-              how software engineering is applied in the real world and how
-              products are made from scratch. I believe this will be a valuable
-              experience for me as I get to work with real life software engineers
-              and understand more about software engineering industry.</p>
-        </div>
+            <p>published: {{ post.published_date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+      </div>
+      {% endfor %}
     </body>
 </html>
