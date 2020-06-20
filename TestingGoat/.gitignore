@@ -1,0 +1,9 @@
+*.pyc
+*~
+/.vacode
+__pycahce__
+myvenv
+db.splite3
+geckodriver.log
+/static
+.DS_Store
