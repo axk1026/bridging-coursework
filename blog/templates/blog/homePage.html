@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+<head>
+  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <title> Aftaab's Website </title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{%static 'css/blog.css' %}">
+</head>
+  <body>
+      <div class="page-header">
+      <h1><a href="/">Aftaab's Website</a></h1>
+    </div>
+    <h2> If you want to view my posts on my blog page click link below </h2>
+    <p> <a href="{% url 'post_list' %}"> My Posts</a> </p>
+</html>
