@@ -20,7 +20,7 @@ class URLTest(TestCase):
         self.assertTemplateUsed(response, 'blog/CV_list.html')
 
     def test_uses_cv_builder(self):
-        response = self.client.get('/CV list')
+        response = self.client.get('/CV_list')
         self.assertTemplateUsed(response, 'blog/CV2_list.html')
 
 #tests whether the the model that i have created will save the items that
