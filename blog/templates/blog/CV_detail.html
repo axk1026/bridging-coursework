@@ -1,0 +1,29 @@
+{% extends 'blog/CVbase.html' %}
+
+{% block content %}
+   <div class="post">
+     <div class="date">
+       {{ cv.author }}
+       Date of Birth: {{ cv.Date_of_birth }}
+       Mobile number: {{ cv.Number }}
+       Email: {{cv.Email }}
+     </div>
+     <h2>Personal Profiile</h2>
+     <p>{{ cv.Personal_Profile|linebreaksbr }}</p>
+     <h2>Education</h2>
+     <p>{{ cv.Education|linebreaksbr  }}<p>
+     <h2>Employment History</h2>
+     <p>{{ cv.Employment_History|linebreaksbr  }}</p>
+     <h2>Acheivements</h2>
+     <p>{{ cv.Achievements|linebreaksbr  }}</p>
+     <h2>Interest</h2>
+     <p>{{ cv.Interests|linebreaksbr  }}<p>
+     <h2>Skills</h2>
+     <p>{{ cv.Skills|linebreaksbr  }}</p>
+     <h2>References</h2>
+     <p>{{ cv.References|linebreaksbr  }}</p>
+
+  </div>
+
+
+{% endblock %}

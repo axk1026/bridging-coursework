@@ -11,6 +11,17 @@
       <div class="page-header">
       <h1><a href="/">Aftaab's Website</a></h1>
     </div>
-    <h2> If you want to view my posts on my blog page click link below </h2>
-    <p> <a href="{% url 'post_list' %}"> My Posts</a> </p>
+    <div class="top-menu">
+      <a href="{% url 'post_list' %}"> My Posts </a>
+      <a href="{% url 'CV_list' %}"> Example CV </a>
+      <a href="{% url 'CV2_list' %}"> Create CV </a>
+    </div>
+    <div class="post">
+    <p>Welcome to My website here you can view the posts that I have made
+      or you can view an example CV to help you design your own CV
+      and create your own CV on this website which you can come back to and edit but
+      always make sure to keep a backup of your CV as this website is not fully secure
+      thank you for vising my website and enjoy creating your CV. Click on the right tabs to view
+      the three different pages</p>
+    </div>
 </html>

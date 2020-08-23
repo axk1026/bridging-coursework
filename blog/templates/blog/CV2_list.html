@@ -1,0 +1,14 @@
+{%extends 'blog/CV2base.html' %}
+
+{% block content %}
+    {% for cv in cvs %}
+        <div class="post">
+          <p>I recommend that once created keep a backup of the CV this is only used a a way to
+            help you create your own CV and see what one looks like</p>
+            <div class="date">
+                {{ cv.published_date }}
+            </div>
+          <h2><a href="{% url 'CV2_detail' pk=cv.pk %}">{{ cv.author }}'s CV</a></h2>
+        </div>
+    {% endfor %}
+{% endblock %}

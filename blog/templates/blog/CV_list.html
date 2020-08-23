@@ -1,0 +1,14 @@
+{%extends 'blog/CVbase.html' %}
+
+{% block content %}
+    {% for cv in cvs %}
+        <div class="post">
+            <div class="date">
+                {{ cv.published_date }}
+            </div>
+          <h2><a href="{% url 'CV_detail' pk=cv.pk %}">{{ cv.author }}</a></h2>
+          <p> Above is an example CV which tells you how to create your own CV and what fields you need to put input
+            eaach box and how</p>
+        </div>
+    {% endfor %}
+{% endblock %}
