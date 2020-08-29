@@ -81,8 +81,8 @@ def CV_new(request):
         form = CV2Form(request.POST)
         if form.is_valid():
             cv = form.save(commit=False)
-            post.published_date = timezone.now()
-            post.save()
+            cv.published_date = timezone.now()
+            cv.save()
             return redirect('CV2_detail', pk=cv.pk)
     else:
         form = CV2Form()
