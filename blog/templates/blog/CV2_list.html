@@ -1,10 +1,10 @@
 {%extends 'blog/CV2base.html' %}
 
 {% block content %}
+<p>I recommend that once created keep a backup of the CV this is only used a a way to
+  help you create your own CV and see what one looks like</p>
     {% for cv in cvs %}
         <div class="post">
-          <p>I recommend that once created keep a backup of the CV this is only used a a way to
-            help you create your own CV and see what one looks like</p>
             <div class="date">
                 {{ cv.published_date }}
             </div>
